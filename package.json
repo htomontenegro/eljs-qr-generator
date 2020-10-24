@@ -1,0 +1,71 @@
+{
+  "name": "el-forge-first-app",
+  "productName": "el-forge-first-app",
+  "version": "1.0.0",
+  "description": "My Electron application description",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "electron-forge start",
+    "package": "electron-forge package",
+    "make": "electron-forge make",
+    "publish": "electron-forge publish",
+    "lint": "echo \"No linting configured\""
+  },
+  "keywords": [],
+  "author": {
+    "name": "Humberto",
+    "email": "hto.montenegro@gmail.com"
+  },
+  "license": "MIT",
+  "config": {
+    "forge": {
+      "packagerConfig": {},
+      "makers": [
+        {
+          "name": "@electron-forge/maker-squirrel",
+          "config": {
+            "name": "el_forge_first_app"
+          }
+        },
+        {
+          "name": "@electron-forge/maker-zip",
+          "platforms": [
+            "darwin"
+          ]
+        },
+        {
+          "name": "@electron-forge/maker-deb",
+          "config": {}
+        },
+        {
+          "name": "@electron-forge/maker-rpm",
+          "config": {}
+        }
+      ]
+    }
+  },
+  "dependencies": {
+    "bulma": "^0.9.0",
+    "downloadjs": "^1.4.7",
+    "electron-log": "^2.2.14",
+    "electron-settings": "^3.0.7",
+    "electron-shortcut-normalizer": "^1.0.0",
+    "electron-squirrel-startup": "^1.0.0",
+    "file-saver": "^2.0.2",
+    "glob": "^7.1.0",
+    "highlight.js": "^9.3.0",
+    "html-to-image": "^0.1.1",
+    "merge-images": "^2.0.0",
+    "qrcode": "^1.4.4",
+    "update-electron-app": "^1.1.1"
+  },
+  "devDependencies": {
+    "@electron-forge/cli": "6.0.0-beta.51",
+    "@electron-forge/maker-deb": "6.0.0-beta.51",
+    "@electron-forge/maker-rpm": "6.0.0-beta.51",
+    "@electron-forge/maker-squirrel": "6.0.0-beta.51",
+    "@electron-forge/maker-zip": "6.0.0-beta.51",
+    "electron": "9.0.5",
+    "electron-packager": "^14.2.1"
+  }
+}

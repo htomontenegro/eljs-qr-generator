@@ -1,0 +1,100 @@
+<template class="task-template">
+  <section id="windows-section" class="section js-section u-category-windows">
+    <header class="section-header">
+      <div class="section-wrapper">
+        <h1>
+          <svg class="section-icon">
+            <use xlink:href="../assets/img/icons.svg#icon-media"></use>
+          </svg>
+          Creación de codigos QR
+        </h1>
+        <!-- <h3>Lorem, ipsum dolor sit amet. </h3> -->
+      </div>
+    </header>
+
+    <div class="demo">
+      <div class="demo-wrapper">
+        <button id="new-window-demo-toggle" class="js-container-target demo-toggle-button">Ingreso manual
+          <div class="demo-meta u-avoid-clicks">Permite el ingreso manual de etiquetas <span
+              class="demo-meta-divider">|</span>
+            QR</div>
+        </button>
+        <div class="demo-box">
+          <!-- <div class="demo-controls">
+            <button class="demo-button" id="new-window">View Demo</button>
+          </div> -->
+          <!-- <p>Complete información de la etiqueta:</p> -->
+
+          <div>
+            <form id="form1" name="form1" action="">
+              <div class="form-control">
+                <span>Pasillo</span>
+                <input type="text" class=" demo-input " id="pasillo" name="pasillo" placeholder="Ingrese pasillo" value="">
+
+              </div>
+              <div class="form-control">
+                <span>Ubicacion</span>
+                <input type="text" class=" demo-input " id="ubicacion" name="ubicacion" placeholder="Ingrese ubicacion">
+
+              </div>
+              <div class="form-control">
+                <span>Nivel</span>
+                <input type="text" class=" demo-input " id="nivel" name="nivel" placeholder="Ingrese nivel">
+
+              </div>
+              <div class="" style="text-align: right;">
+                <button class="demo-button" type="submit">Generar código</button>
+              </div>
+              <div id="image-container" class="img-container">
+                Click en la imágen para descargar
+                <div id="image-download" class="img-download">
+                  <img id="image" src="" alt="">
+                  <div style="display:flex; flex-direction: column;">
+                    <span class="image-text" id="text-pasillo"></span>
+                    <span class="image-text" id="text-ubicacion"></span>
+                    <span class="image-text" id="text-nivel"></span>
+                  </div>
+                </div>
+                <div class="" style="text-align: right;">
+                  <button class="demo-button-secondary" type="submit">Limpiar</button>
+                </div>
+              </div>
+
+
+            </form>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+
+    <!-- <div class="demo">
+      <div class="demo-wrapper">
+        <button id="new-window-demo-toggle" class="js-container-target demo-toggle-button">Subir archivo
+          <div class="demo-meta u-avoid-clicks">Permite subir archivo excel y generar etiquetas<span
+              class="demo-meta-divider">|</span>
+            Proximamente</div>
+        </button>
+        <div class="demo-box">
+          <div class="demo-controls">
+            <button class="demo-button" id="new-window">Seleccionar archivo</button>
+          </div>
+          <p>Etiquetas a generar: X cantidad</p>
+
+          <h5>Procesar</h5>
+
+        </div>
+      </div>
+    </div> -->
+
+
+    <script type="text/javascript">
+      require('../renderer-process/windows/create-window.js')
+      // require('./renderer-process/windows/manage-window')
+      // require('./renderer-process/windows/using-window-events')
+      // require('./renderer-process/windows/frameless-window')
+    </script>
+
+  </section>
+</template>
